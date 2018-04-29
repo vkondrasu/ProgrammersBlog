@@ -19,6 +19,7 @@ Unlike upper_bound, the value pointed by the iterator returned by this function 
 #include <vector>       // std::vector
 
 int main () {
+
   int myints[] = {10,20,30,30,20,10,10,20};
   std::vector<int> v(myints,myints+8);           // 10 20 30 30 20 10 10 20
 
@@ -32,4 +33,5 @@ int main () {
   std::cout << "upper_bound at position " << (up - v.begin()) << '\n';
 
   return 0;
+
 }
