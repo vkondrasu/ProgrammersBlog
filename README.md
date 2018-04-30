@@ -35,3 +35,27 @@ int main () {
   return 0;
 
 }
+
+Difference between regular cast, static_cast and dynamic_cast
+
+static_cast - is used for cases where we want to reverse an implicit conversion, with a few restrictions and additions. static_cast performs no runtime checks. You should use this, if you know that you are referring to an object of specific type and cast is not necessary.
+
+example:
+
+void func(void * data){
+
+MyClass *mc = static_cast<MyClass*>data;
+.................
+}
+
+
+int main(){
+
+MyClass c;
+
+start_thread(&func, &c).join();
+
+return 0;
+
+}
+
