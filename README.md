@@ -59,3 +59,4 @@ return 0;
 
 }
 
+dynamic_cast - is used when you don't know what the dynamic type of object is. It return a null pointer if the object being casted doesn't have the type casted to as base class. when you cast to a reference a bad_cast exception is thrown in this case.
