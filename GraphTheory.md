@@ -1,4 +1,4 @@
-#Graph Theory
+##Graph Theory
 
 Applications 
 
@@ -52,6 +52,8 @@ A Graph G with V vertices is a tree if and only if
   #4. G is acyclic but adding an edge creates a cycle.
   #5. Exactly one simple path connects each pair of vertices G.
 
+
+Biperate Graph - A Graph whose vertices can be divided into 2 sets such that each edge connects a vertex from one set to another.
 
 #1. Nonrecursive depth-first search. Implement depth-first search in an undirected graph without using recursion.
 
