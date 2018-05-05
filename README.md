@@ -1,7 +1,7 @@
 # ProgrammersBlog
 Notes
 
-#lower_bound
+## lower_bound
 
 Returns an iterator pointing to the first element in the range [first,last) which does not compare less than val.
 
@@ -60,3 +60,30 @@ return 0;
 }
 
 dynamic_cast - is used when you don't know what the dynamic type of object is. It return a null pointer if the object being casted doesn't have the type casted to as base class. when you cast to a reference a bad_cast exception is thrown in this case.
+
+## Templates
+
+Class templates are generally used to implement containers.
+
+template <class T>
+class MyTemplate {
+T element;
+public:
+MyTemplate (T arg) {element=arg;}
+T divideBy2 () {return element/2;}
+};
+  
+Template Specialization - It is also possible to different implementation for a specific type. 
+
+// class template specialization:
+template <>
+class MyTemplate <char> {
+char element;
+public:
+MyTemplate (char arg) {element=arg;}
+char printElement ()
+{
+return element;
+}
+};
+  
