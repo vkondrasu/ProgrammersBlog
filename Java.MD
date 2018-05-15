@@ -13,3 +13,10 @@ ArrayList < ArrayList<Integer> > edges = new ArrayList< ArrayList<Integer> >(4);
   # java.lang.unsatisfiedlinkerror – How to handle Unsatisfied Link Error
   
   https://examples.javacodegeeks.com/java-basics/exceptions/java-lang-unsatisfiedlinkerror-how-to-handle-unsatisfied-link-error/
+  
+  # transient keyword.
+  
+  If you define any data member as transient, it will not be serialized. If you de-serialize the object you will get default value for transient variable.
+  
+  
+  
