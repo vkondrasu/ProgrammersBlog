@@ -6,10 +6,12 @@ function binarySearch(Arr, value_to_find, min, max){
             return index;
         }
         else if( parseInt(Arr[index]) > parseInt(value_to_find) ){
-            binarySearch(Arr, value_to_find, min, index - 1);
+            return binarySearch(Arr, value_to_find, min, index - 1);
         }
         else{
-            binarySearch(Arr, value_to_find, index+1, max );
+            return binarySearch(Arr, value_to_find, index+1, max );
         }
     }
+    else return -1;
+    
 }
