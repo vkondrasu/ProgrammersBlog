@@ -39,8 +39,19 @@ const nameConst = 'VK';
 nameConst = 'venkat'; // invalid
 const nameConst = 'kondrasu'; //invalid
 
+what about scope???
 
+## ES6 arrow functions
 
+If we have a function that simply returns a a single expression then that can be written with ... expression syntax.
+
+fuction square(x){
+  return x*x;
+  }
+  
+  with arrow function syntax this cane be
+  
+  cost square = (x) => x*x;
 
 
 
