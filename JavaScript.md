@@ -52,6 +52,27 @@ fuction square(x){
   with arrow function syntax this cane be
   
   cost square = (x) => x*x;
+  
+###  'arguments' object no longer bound with aroow functions
+
+const add = function(a,b){
+    console.log(arguments);
+    return a+b;
+};
+console.log(add(12,34));
+
+the above code outputs
+Arguments(2) [12, 34, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+46
+
+but with arrow function it results in - 'arguments' not defined.
+
+Uncaught ReferenceError: arguments is not defined
+    at add (<anonymous>:2:17)
+    at <anonymous>:5:13
+  
+  
+#### 'this' key word no longer bound with arrow functions
 
 
 
