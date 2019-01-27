@@ -74,5 +74,34 @@ Uncaught ReferenceError: arguments is not defined
   
 #### 'this' key word no longer bound with arrow functions
 
+let user = {
+    name: 'Venkat',
+    places: ['Hyderabad','Prakasam','Vijayawada','Gobburu'],
+    placesLived: function(){
+        console.log(this.name);
 
+        this.places.forEach(function(city){
+            console.log(`${this.name} has lived in ${city}`);
+        })
+    }
+};
 
+user.placesLived();
+
+this code produces
+
+Venkat
+VM163:8  has lived in Hyderabad
+VM163:8  has lived in Prakasam
+VM163:8  has lived in Vijayawada
+VM163:8  has lived in Gobburu
+
+but when we change line this.places.forEach(function(city){ to this.places.forEach((city) => {
+
+the same produces
+
+Venkat
+VM402:8 Venkat has lived in Hyderabad
+VM402:8 Venkat has lived in Prakasam
+VM402:8 Venkat has lived in Vijayawada
+VM402:8 Venkat has lived in Gobburu
