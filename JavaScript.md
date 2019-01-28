@@ -91,17 +91,29 @@ user.placesLived();
 this code produces
 
 Venkat
-VM163:8  has lived in Hyderabad
-VM163:8  has lived in Prakasam
-VM163:8  has lived in Vijayawada
-VM163:8  has lived in Gobburu
+has lived in Hyderabad
+has lived in Prakasam
+has lived in Vijayawada
+has lived in Gobburu
 
 but when we change line this.places.forEach(function(city){ to this.places.forEach((city) => {
 
 the same produces
 
 Venkat
-VM402:8 Venkat has lived in Hyderabad
-VM402:8 Venkat has lived in Prakasam
-VM402:8 Venkat has lived in Vijayawada
-VM402:8 Venkat has lived in Gobburu
+Venkat has lived in Hyderabad
+Venkat has lived in Prakasam
+Venkat has lived in Vijayawada
+Venkat has lived in Gobburu
+
+# ReactJS
+
+Passing props is how information flows in React apps, from parents to children.
+
+By calling the this.setState(), we tell React to re-render the component. When you call setState in a component, React automatically updates the child components inside of it too.
+
+In React, function components are a simpler way to write components that only contain a render method and don’t have their own state. Instead of defining a class which extends React.Component, we can write a function that takes props as input and returns what should be rendered. Function components are less tedious to write than classes, and many components can be expressed this way.
+
+
+
+
